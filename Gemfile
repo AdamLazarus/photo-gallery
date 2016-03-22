@@ -45,4 +45,11 @@ group :development do
   gem 'spring'
 
   gem 'drunken_parrot_flat_ui_lite-rails', '~> 1.0'
+
+  gem 'carrierwave'
+  gem 'mini_magick'
+  gem 'devise'
+  gem 'omniauth'
+  gem 'therubyracer'
+  gem 'omniauth-facebook'
 end
