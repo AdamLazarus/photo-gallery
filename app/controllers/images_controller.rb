@@ -5,6 +5,7 @@ class ImagesController < ApplicationController
 
       def create
         @image = Image.new(image_params) ##assign image params here
+        @image.uid = current_user.id
         if @image.save
           redirect_to @image
         end
