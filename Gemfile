@@ -52,4 +52,6 @@ group :development do
   gem 'omniauth'
   gem 'therubyracer'
   gem 'omniauth-facebook'
+  gem 'figaro'
+  gem "fog"
 end

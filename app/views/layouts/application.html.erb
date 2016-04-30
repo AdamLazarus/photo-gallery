@@ -22,17 +22,19 @@
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <% if user_signed_in? %>
               <ul class="nav navbar-nav">
                   <li>
                       <%= link_to "Home", root_path %>
                   </li>
                   <li>
-                      <%= link_to "Upload", new_image_path %>
+                      <%= link_to "Upload", new_user_image_path(current_user) %>
                   </li>
                   <li>
                     <%= link_to "My Account", edit_user_registration_path %>
                     </li>
               </ul>
+              <%end%>
           </div>
           <!-- /.navbar-collapse -->
       </div>

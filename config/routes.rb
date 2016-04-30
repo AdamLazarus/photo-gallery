@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks"}
-  resources :images
-  resources :users
+
+  resources :users do
+    resources :images
+  end
   get 'home/new'
   get 'images/new'
   post 'images/create'

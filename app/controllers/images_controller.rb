@@ -1,13 +1,13 @@
 class ImagesController < ApplicationController
       def new
-        @image = Image.new
+        @image = current_user.images.build
       end
 
       def create
-        @image = Image.new(image_params) ##assign image params here
-        @image.uid = current_user.id
+        @image = current_user.images.build(image_params)
+        @image.user_id = current_user.id
         if @image.save
-          redirect_to @image
+          redirect_to user_images_path(current_user, @image)
         end
       end
 
