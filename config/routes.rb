@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks"}
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
 
   resources :users do
     resources :images
@@ -10,7 +13,7 @@ Rails.application.routes.draw do
   post 'images/create'
   get 'images/show'
   get 'my_account', :to => 'users/show'
-  root 'home#new'
+  root 'images#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

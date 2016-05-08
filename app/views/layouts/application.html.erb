@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PhotoGallery</title>
+  <title><%= @title %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -31,8 +32,8 @@
                       <%= link_to "Upload", new_user_image_path(current_user) %>
                   </li>
                   <li>
-                    <%= link_to "My Account", edit_user_registration_path %>
-                    </li>
+                    <%= link_to "Sign Out", destroy_user_session_path %>
+                  </li>
               </ul>
               <%end%>
           </div>
