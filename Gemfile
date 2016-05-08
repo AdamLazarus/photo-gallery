@@ -28,6 +28,9 @@ gem 'mini_magick'
 gem 'devise'
 gem 'figaro'
 gem "fog"
+gem 'omniauth'
+gem 'therubyracer'
+gem 'omniauth-facebook'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -53,11 +56,6 @@ group :development do
   gem 'spring'
 
   gem 'drunken_parrot_flat_ui_lite-rails', '~> 1.0'
-
-
-  gem 'omniauth'
-  gem 'therubyracer'
-  gem 'omniauth-facebook'
 
 
 
