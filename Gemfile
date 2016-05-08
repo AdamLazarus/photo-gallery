@@ -54,4 +54,9 @@ group :development do
   gem 'omniauth-facebook'
   gem 'figaro'
   gem "fog"
+
+  group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+  end
 end
