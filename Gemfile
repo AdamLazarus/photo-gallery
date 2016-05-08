@@ -31,6 +31,7 @@ gem "fog"
 gem 'omniauth'
 gem 'therubyracer'
 gem 'omniauth-facebook'
+gem 'drunken_parrot_flat_ui_lite-rails', '~> 1.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -55,7 +56,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  gem 'drunken_parrot_flat_ui_lite-rails', '~> 1.0'
+
 
 
 
