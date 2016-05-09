@@ -28,9 +28,7 @@ gem 'mini_magick'
 gem 'devise'
 gem 'figaro'
 gem "fog"
-gem 'omniauth'
 gem 'therubyracer'
-gem 'omniauth-facebook'
 gem 'drunken_parrot_flat_ui_lite-rails', '~> 1.0'
 
 # Use ActiveModel has_secure_password
